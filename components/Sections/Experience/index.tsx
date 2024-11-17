@@ -1,6 +1,6 @@
 import { memo } from 'react'
 import { Heading, Text, Stack, Link } from '@chakra-ui/react'
-import ExperienceTab from './ExperienceTab'
+
 const DetailSection = () => (
   <Stack
     width={{ base: '99%', lg: '60%', xl: '75%' }}
@@ -13,19 +13,17 @@ const DetailSection = () => (
         fontVariantCaps: 'small-caps',
       }}
     >
-      Places i’ve worked.
+      Places <span style={{color: '#FD4B6D'}}>i've worked.</span>
     </Heading>
     <Text variant="description">
-      Since 2016, had a privilege to work with several companies that enables me
-      to hone my skills and talents. These companies will always have a special
-      place in my heart. Currently I am working with{' '}
-      <Link href="https://www2.deloitte.com/" target="_blank" rel="noreferrer">
-        Deloitte
+    Over the past few years, I have been focused on developing my skills and expanding my knowledge in my field. While I have not yet had the opportunity to work with any companies, I am actively seeking freelance opportunities where I can apply my expertise and contribute to exciting projects. I am eager to embrace new challenges and collaborate with others as I continue to grow professionally{' '}
+      <Link href="https://www.linkedin.com/in/harshit-rawat-0a6944274/" target="_blank" rel="noreferrer" style={{color: '#FD4B6D'}}>
+        Hire me!
       </Link>
       .
     </Text>
 
-    <ExperienceTab />
+    
   </Stack>
 )
 

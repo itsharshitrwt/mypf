@@ -103,7 +103,7 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
           <SkillList title="Productivity boosts" columns={productivityCols} />
         </ModalBody>
         <ModalFooter>
-          <Text fontSize="x-small">*Some micro frameworks not included </Text>
+          
         </ModalFooter>
       </ModalContent>
     </Modal>

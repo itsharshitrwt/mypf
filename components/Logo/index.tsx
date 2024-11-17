@@ -1,5 +1,5 @@
 import { memo, useState } from 'react'
-import { useColorMode, Image, useBreakpointValue } from '@chakra-ui/react'
+import { useColorMode, Image, useBreakpointValue, border } from '@chakra-ui/react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from './styles.module.css'
@@ -19,21 +19,22 @@ const Logo = () => {
             className={!isMobile ? styles.logo : ''}
             boxSize={isMobile ? '30px' : '50px'}
             objectFit="cover"
-            src="./logo.png"
-            alt="KL Lawingco Logo"
-            fallbackSrc="./logo.png"
+            src="./logo1.png"
+            alt="harshit"
+            fallbackSrc="./logo1.png"
             variants={simpleOpacity}
             initial="initial"
             animate={isLogoLoaded && 'animate'}
             onLoad={() => setLogoLoaded(true)}
             zIndex={2}
+            style = {{border: "2px solid #FD4B6D"}}
           />
         ) : (
           <MotionImage
             className={!isMobile ? styles.logo : ''}
             boxSize={isMobile ? '30px' : '50px'}
             objectFit="cover"
-            src="./logo_light.png"
+            src="./logo1.png"
             fallbackSrc="./logo_light.png"
             alt="KL Lawingco Logo"
             variants={simpleOpacity}
@@ -41,6 +42,7 @@ const Logo = () => {
             animate={isLogoLoaded && 'animate'}
             onLoad={() => setLogoLoaded(true)}
             zIndex={2}
+            style = {{border: "2px solid #FD4B6D"}}
           />
         )}
       </Link>

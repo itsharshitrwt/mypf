@@ -59,7 +59,7 @@ export const Skills: {
 } = {
   backend: [
     {
-      name: 'C# - .NET.Core',
+      name: 'C++',
       icon: SiDotNet,
     },
     {
@@ -74,14 +74,6 @@ export const Skills: {
       name: 'Typescript',
       icon: SiTypescript,
     },
-    {
-      name: 'Graphql (JS, C#)',
-      icon: SiGraphql,
-    },
-    {
-      name: 'PHP (Wordpress, Slim)',
-      icon: SiPhp,
-    },
   ],
   frontend: [
     {
@@ -93,20 +85,12 @@ export const Skills: {
       icon: SiNextDotJs,
     },
     {
-      name: 'Apollo Graphql',
-      icon: SiApollographql,
-    },
-    {
       name: 'Redux',
       icon: SiRedux,
     },
     {
       name: 'VueJS',
       icon: SiVueDotJs,
-    },
-    {
-      name: 'Ghost',
-      icon: SiGhost,
     },
   ],
   database: [
@@ -199,11 +183,8 @@ export const Skills: {
     {
       name: 'Bash',
       icon: SiGnubash,
-    },
-    {
-      name: 'SourceTree',
-      icon: FaSourcetree,
-    },
+    }
+    
   ],
   mobile: [
     {

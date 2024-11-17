@@ -29,61 +29,61 @@ const DevToArticles = ({ articles }: { articles: Article[] }) => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        Dev.to blog
+        my <span style={{ color: '#FD4B6D' }}>blogs</span>
       </Heading>
       <Text variant="description">
         I write dev related things from time to time!
       </Text>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 5, md: 10 }}>
-        {articles.map((item) => (
-          <Link
-            aria-label={item.title}
-            target="_blank"
-            rel="noreferrer"
-            key={item.id}
-            href={item.url}
-            color="currentcolor"
-            _hover={{ textDecoration: 'none' }}
-            transition="all 0.5s ease"
-            role="group"
+  {articles.map((item) => (
+    <Link
+      aria-label={item.title}
+      target="_blank"
+      rel="noreferrer"
+      key={item.id}
+      href={item.url} // Link to the article
+      color="currentcolor"
+      _hover={{ textDecoration: 'none' }}
+      transition="all 0.5s ease"
+      role="group"
+    >
+      <Stack
+        spacing={3}
+        borderWidth="2px" // Set border width to 2px
+        borderColor="white" // Set border color to white
+        borderRadius="1em"
+        padding={{ base: '1em', '2xl': '1.5em' }}
+        height="100%"
+        transition="all 0.2s ease-in-out"
+        backgroundColor={bg}
+        _hover={{
+          background: alphaHover,
+        }}
+        as="article"
+      >
+        <Heading fontSize="larger" paddingX={2}>
+          {item.title}
+        </Heading>
+        <Divider borderColor="#A6A6A6" width="95%" />
+        <Stack spacing={1}>
+          <Heading
+            fontSize="small"
+            paddingX={2}
+            variant="accentAlternative"
           >
-            <Stack
-              spacing={3}
-              borderWidth="1px"
-              borderColor={borderColor}
-              borderRadius="1em"
-              padding={{ base: '1em', '2xl': '1.5em' }}
-              height="100%"
-              transition="all 0.2s ease-in-out"
-              backgroundColor={bg}
-              _hover={{
-                background: alphaHover,
-              }}
-              as="article"
-            >
-              <Heading fontSize="larger" paddingX={2}>
-                {item.title}
-              </Heading>
-              <Divider borderColor="#A6A6A6" width="95%" />
-              <Stack spacing={1}>
-                <Heading
-                  fontSize="small"
-                  paddingX={2}
-                  variant="accentAlternative"
-                >
-                  {item.tag_list.join(', ')}
-                </Heading>
-                <Heading fontSize="smaller" variant="description" paddingX={2}>
-                  {item.readable_publish_date}
-                </Heading>
-              </Stack>
-              <Text fontSize="smaller" variant="description" paddingX={2}>
-                {item.description}
-              </Text>
-            </Stack>
-          </Link>
-        ))}
-      </SimpleGrid>
+            {item.tag_list.join(', ')}
+          </Heading>
+          <Heading fontSize="smaller" variant="description" paddingX={2}>
+            {item.readable_publish_date}
+          </Heading>
+        </Stack>
+        <Text fontSize="smaller" variant="description" paddingX={2}>
+          {item.description}
+        </Text>
+      </Stack>
+    </Link>
+  ))}
+</SimpleGrid>
     </Stack>
   )
 }

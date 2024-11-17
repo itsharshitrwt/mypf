@@ -103,10 +103,10 @@ const ScrollMore = () => {
               as="a"
               paddingY={3}
               fontFamily="monospace"
-              href="mailto:marcjhon18@gmail.com"
+              href="mailto:harshit77dev@gmail.com"
               target="_blank"
               rel="noreferrer"
-              color={emailColor}
+              color= "#FD4B6D"
               _hover={{
                 color: emailLine,
                 _after: {
@@ -120,7 +120,7 @@ const ScrollMore = () => {
               alignItems="center"
               justifyContent="center"
               _after={{
-                backgroundColor: emailLine,
+                backgroundColor: '#FD4B6D',
                 width: '2px',
                 opacity: 0.5,
                 content: '""',
@@ -130,7 +130,7 @@ const ScrollMore = () => {
                 marginTop: '10px',
               }}
             >
-              marcjhon@gmail.com{' '}
+              ucanscolldownwithharshitrwt{' '}
             </Text>
           </motion.div>
         )}

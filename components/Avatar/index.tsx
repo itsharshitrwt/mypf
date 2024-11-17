@@ -50,24 +50,15 @@ const Avatar = () => {
         exit={{ opacity: 0 }}
       >
         <ChkImage
-          src={imgAvatar}
-          alt="KL Lawingco Avatar"
+          src="/works/avatar.png"
+          alt="harshit image"
           htmlWidth="250"
           htmlHeight="250"
-          margin="auto"
+          marginTop="10px"
           fallback={<SkeletonCircle height="100%" width="100%" />}
+          style={{borderRadius: "100%" , border: "3px solid #FD4B6D"}}
         />
-        <Text textAlign="center" fontSize="smaller" variant="description">
-          Art by{' '}
-          <Link
-            href="https://twitter.com/kojiro_ai"
-            target="_blank"
-            aria-label="KojiroArt"
-            rel="noreferrer"
-          >
-            KojiroArt
-          </Link>
-        </Text>
+        
       </MotionBox>
     </AnimatePresence>
   )

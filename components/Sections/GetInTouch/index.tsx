@@ -39,10 +39,10 @@ const GetInTouch = () => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        Say hi!{' '}
+        Say <span style={{ color: '#FD4B6D' }}>hi!</span>{' '}
         <Text as="span" fontSize="2xl" variant="emphasis">
           <motion.div
-            style={{ display: 'inline-block' }}
+            style={{ display: 'inline-block', color: '#FD4B6D'}}
             variants={rimuruVariant}
             ref={ref}
             animate={inView ? ['shake', 'jump'] : false}
@@ -52,18 +52,16 @@ const GetInTouch = () => {
         </Text>
       </Heading>
       <Text variant="description">
-        Though, I am fairly introverted myself. I do reply to messages as long
-        as my human interaction battery lasts. Coding, work, movies or even weeb
-        stuff, anything is cool. So feel free to message me on any of my social
-        media or shoot me an{' '}
+      Though I’m fairly introverted, I promise I do reply to messages,
+      So don’t hesitate to reach out! Feel free to message me on any of my social media platforms or shoot me an email. Let’s connect and turn your ideas into reality—just be prepared for some quirky banter along the way!{' '}
         <Link
-          href="mailto:marcjhon18@gmail.com"
+          href="mailto:harshit77dev@gmail.com"
           target="_blank"
           rel="noreferrer"
+          style={{color: '#FD4B6D'}}
         >
-          email
+           email
         </Link>
-        .
       </Text>
 
       <Box
@@ -77,14 +75,14 @@ const GetInTouch = () => {
           variant="description"
           textDecoration="none"
           rel="noreferrer"
-          href="https://github.com/klawingco/kl_portfolio"
+          href="https://github.com/itsharshitrwt"
           target="_blank"
           _focus={{ boxShadow: 'none' }}
         >
           <Text as="span">
             <Icon as={RiGithubFill} h={6} w={6} /> <br />
-            Designed and Made with <Icon as={RiHeartPulseFill} /> <br />
-            KL Lawingco <Icon as={RiCopyleftLine} /> 2021
+            Designed by harshit <Icon as={RiHeartPulseFill} /> <br />
+            
           </Text>
         </Link>
       </Box>

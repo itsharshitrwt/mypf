@@ -28,11 +28,10 @@ const FeaturedWorksSection = () => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        Some of my works.
+        Some of <span style={{ color: '#FD4B6D' }}>my works.</span>
       </Heading>
       <Text variant="description">
-        Check out some of the works I made at freelancing, company projects and
-        even case studies.
+        Check out some of the works I made as side projects.
       </Text>
 
       <MotionGrid
@@ -44,7 +43,7 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Tobira!"
+            title="Ownspace"
             src="/works/tobira/IphoneX-tobira.webp"
             description="Japanese social media platform for travelers to show off their
           adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
@@ -58,10 +57,10 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="RSV"
+            title="Brief"
             description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
-            src="/works/rsv.webp"
-            height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            src="/works/brief.png"
+            height={{ base: '130px', md: '225px', '2xl': '230px' }}
             ctaUrl="https://solution.rsv.ltd/jp"
             isMobile={isMobile}
           />
@@ -70,11 +69,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
-            title="Agora School"
+            title="GearValue"
             description="A quizz - reviewer LMS, I made as a freelancer. Backend were powered by PHPSlim and VueJS for Front end."
             src="/works/agora.webp"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://dev.agora-school.com"
+            ctaUrl="https://github.com/itsharshitrwt/GearValue"
             objectPosition="right 20%"
             isMobile={isMobile}
           />
@@ -83,11 +82,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={4}
-            title="TMH Layla EC"
+            title="PranaPulse"
             description="A Japanese Semi-conductor e-commerce made at my old place at IVP. I was working with backend using ASP.NET MVC"
-            src="/works/tmh.webp"
-            height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://www.layla-ec.com/"
+            src="/works/pranapulse.png"
+            height={{ base: '130px', md: '225px', '2xl': '230px' }}
+            ctaUrl="https://pranapulse.vercel.app/"
             isMobile={isMobile}
           />
         </MotionGridItem>
